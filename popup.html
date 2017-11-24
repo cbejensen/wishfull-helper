@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wishfull Assistant</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Wishfull Assistant</h1>
+
+    <div class="loading">Loading...</div>
+
+    <form class="sign-in-form">
+      <p>
+        <label for="sign-in-email">E-mail</label>
+        <br />
+        <input type="email" id="sign-in-email" required>
+      </p>
+      <p>
+        <label for="sign-in-password">Password</label>
+        <br />
+        <input type="password" id="sign-in-password" required>
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+
+
+    <form class="wish-form">
+      <p>
+        <label for="wish-title">Title</label>
+        <br />
+        <input type="text" id="wish-title" required>
+      </p>
+      <p>
+        <label for="wish-desc">Description</label>
+        <br />
+        <textarea id="wish-desc" cols="20" rows="5"></textarea>
+      </p>
+      <p>
+        <label for="wish-rank">Rank:
+          <span class="wish-rank-value"></span>
+        </label>
+        <br />
+        <input type="range" id="wish-rank" min="1" max="10">
+      </p>
+    </form>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>

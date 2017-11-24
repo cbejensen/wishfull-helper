@@ -1,0 +1,40 @@
+body {
+  width: 270px;
+}
+
+button {
+  display: block;
+  margin: auto;
+}
+
+form {
+  margin: 0 20px;
+}
+
+form input, form textarea {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.loading, .sign-in-form, .wish-form {
+  display: none;
+}
+
+.container.show-loading .loading,
+.container.show-sign-in-form .sign-in-form,
+.container.show-wish-form .wish-form {
+  display: block;
+}
+
+.loading {
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+#wish-desc {
+  resize: vertical;
+}
